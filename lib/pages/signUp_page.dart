@@ -28,7 +28,8 @@ class _SignUpPageState extends State<SignUpPage> {
         },
       );
       if (response.statusCode == 200) {
-        print("acoount created");
+        print(response.body);
+        print(response.statusCode);
       } else {
         print("failed");
       }
